@@ -11,10 +11,6 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
     <!-- local stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Match The Doggo</title>
@@ -22,10 +18,66 @@
 
 <body>
     <div>
+        <!-- title -->
         <h1 id="title">Match the Doggo</h1>
     </div>
+    <div>
+        <!-- Memory Game -->
+        <main id="play-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        Column
+                    </div>
+                    <div class="col">
+                        Column
+                    </div>
+                    <div class="col">
+                        Column
+                    </div>
+                    <div class="col">
+                        Column
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Column
+                    </div>
+                    <div class="col">
+                        Column
+                    </div>
+                    <div class="col">
+                        Column
+                    </div>
+                    <div class="col">
+                        Column
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Column
+                    </div>
+                    <div class="col">
+                        Column
+                    </div>
+                    <div class="col">
+                        Column
+                    </div>
+                    <div class="col">
+                        Column
+                    </div>
+                </div>
+            </div>
+    </div>
 
+    </main>
+    <section id="buttons">
+        <button class="btn btn-light" id="restart-btn" onclick="restartGame()">Restart</button>
+        <a href="index.html" class="btn btn-light" id="htp-btn" role="button">How to play</a>
+    </section>
 
+    </div>
+    <!-- local script -->
     <script src="scripts/game.js"></script>
 </body>
 
