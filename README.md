@@ -43,3 +43,7 @@ As a games developer I want;
 - A score of the amount of moves the user has done and the amount of pairs, just above the cards.
 - Social media links at the bottom of the page.
 * Game cards to be flipped like in real life.
+
+## Testing
+
+- I fully acknowledge and understand that, in a real-world scenario, an extensive set of Jest tests would be more comprehensive.
