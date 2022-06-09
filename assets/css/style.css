@@ -30,3 +30,11 @@ body {
 #htp-btn {
     margin-left: 20px;
 }
+
+.card-style {
+    position: relative;
+    width: 11em;
+    height: 12em;
+    border: 2px solid black;
+    border-radius: 5px;
+}
