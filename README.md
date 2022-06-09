@@ -108,3 +108,19 @@ In order to make a local copy of this project, you can clone it. In your IDE Ter
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://joshfreeman00.github.io/MatchTheDoggo/)
+
+## Credits
+
+* [Bootstrap v5.2](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - The grid system.
+* [Google Fonts](https://fonts.google.com/) - For the Fredoka font that was used.
+* [w3schools](https://www.w3schools.com/default.asp) - For the consistent help throughout.
+* [Stack Overflow](https://stackoverflow.com/) - For help debugging and fixes throughout.
+* My mentor - For helpful tips and debugging.
+* [Unsplash](https://unsplash.com/) - All the images used within the web page were sourced from here.
+
+
+## Acknowledgements
+
+* To create this game, I used material and information covered in the Full Stack Development course by Code Institute. As well as information from the Slack Community Channels, Stack Overflow and W3Schools.
+
+* Tim Nelson, my mentor, for reviewing my work and providing useful, help, feedback and advice throughout.
