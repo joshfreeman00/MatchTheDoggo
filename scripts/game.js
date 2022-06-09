@@ -1,37 +1,33 @@
-//Array of dog images, with each image appearing twice
-const cardArray = [
-    ["assets/images/dog1.jpg"],
-    ["assets/images/dog1.jpg"],
-    ["assets/images/dog3.jpg"],
-    ["assets/images/dog3.jpg"],
-    ["assets/images/dog4.jpg"],
-    ["assets/images/dog4.jpg"],
-    ["assets/images/dog5.jpg"],
-    ["assets/images/dog5.jpg"],
-    ["assets/images/dog6.jpg"],
-    ["assets/images/dog6.jpg"],
-    ["assets/images/dog7.jpg"],
-    ["assets/images/dog7.jpg"]
-];
+const cards = document.querySelectorAll(".card");
+const totalCards = cards.length;
 
-const totalCards = cardArray.length;
-
-//shuffle cards at the start of each game, code from Stack Overflow called 'durstenfeld shuffle'
-function shuffleCards(array) {
-    for (let i = cardArray.length - 1; i > -1; --i) {
-        let j = Math.floor(Math.random() * (i + 1)); //Generates a random number
-
-        //read card at current i value
-        let cardNum = cardArray[i][0];
-        let cardImage = cardArray[i][1];
-
-        //swap the values with a random element
-        cardArray[i][1] = cardArray[j][1];
-        cardArray[i][0] = cardArray[j][0];
-    };
+/**
+ * Shuffles the cards
+ */
+function shuffleCards() {
+    cards.forEach((card) => {
+        card.style.order = Math.floor(Math.random() * 12);
+    });
 };
 
+//Once the page has fully loaded it calls the function to shuffle the cards
+window.onload = () => {
+    shuffleCards();
+};
 
+//score values for the start of a new game
+let pairs = 0;
+let totalMoves = 0;
+
+/**
+ * Increment pairs value once a pair has been found
+ */
+function incrementPairs() {
+    pairs++;
+    if (pairs === totalCards / 2) {
+        alert("You win!")
+    }
+};
 
 
 
