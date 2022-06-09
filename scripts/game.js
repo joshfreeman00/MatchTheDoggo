@@ -1,4 +1,4 @@
-//Array of dog images, with each image appeaing twice
+//Array of dog images, with each image appearing twice
 const cardArray = [
     ["assets/images/dog1.jpg"],
     ["assets/images/dog1.jpg"],
@@ -11,7 +11,7 @@ const cardArray = [
     ["assets/images/dog6.jpg"],
     ["assets/images/dog6.jpg"],
     ["assets/images/dog7.jpg"],
-    ["assets/images/dpg7.jpg"]
+    ["assets/images/dog7.jpg"]
 ];
 
 const totalCards = cardArray.length;
@@ -21,7 +21,7 @@ function shuffleCards(array) {
     for (let i = cardArray.length - 1; i > -1; --i) {
         let j = Math.floor(Math.random() * (i + 1)); //Generates a random number
 
-        //read card at curent i value
+        //read card at current i value
         let cardNum = cardArray[i][0];
         let cardImage = cardArray[i][1];
 
