@@ -16,18 +16,21 @@ const cardArray = [
 
 const totalCards = cardArray.length;
 
-//shuffle cards at the start of each game, code from geeksforgeeks.com
-for (let i = cardArray.length - 1; i > -1; --i) {
-    let j = Math.floor(Math.random() * (i + 1)); //Generates a random number
+//shuffle cards at the start of each game, code from Stack Overflow called 'durstenfeld shuffle'
+function shuffleCards(array) {
+    for (let i = cardArray.length - 1; i > -1; --i) {
+        let j = Math.floor(Math.random() * (i + 1)); //Generates a random number
 
-    //read card at curent i value
-    let cardNum = cardArray[i][0];
-    let cardImage = cardArray[i][1];
+        //read card at curent i value
+        let cardNum = cardArray[i][0];
+        let cardImage = cardArray[i][1];
 
-    //swap the values with a random element
-    cardArray[i][1] = cardArray[j][1];
-    cardArray[i][0] = cardArray[j][0];
+        //swap the values with a random element
+        cardArray[i][1] = cardArray[j][1];
+        cardArray[i][0] = cardArray[j][0];
+    };
 };
+
 
 
 
