@@ -17,65 +17,103 @@
 </head>
 
 <body>
-    <div>
-        <!-- title -->
-        <h1 id="title">Match the Doggo</h1>
-    </div>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- title -->
+                <div class="col">
+                    <h1 id="title">Match the Doggo</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p id="timer"></p>
+                </div>
+                <div class="col">
+                    <p id="moves"></p>
+                </div>
+                <div class="col">
+                    <p id="pairs"></p>
+                </div>
+            </div>
+        </div>
+    </header>
     <div>
         <!-- Memory Game -->
         <main id="play-area">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        Column
+                <div class="row mb-3">
+                    <div class="col-3">
+                        <div class="flip">
+                            <img class="card card-style" src="assets/images/dog1.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="col">
-                        Column
+                    <div class="col-3">
+                        <div class="flip">
+                            <img class="card card-style" src="assets/images/dog1.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="col">
-                        Column
+                    <div class="col-3">
+                        <div class="flip">
+                            <img class="card card-style" src="assets/images/dog3.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="col">
-                        Column
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        Column
-                    </div>
-                    <div class="col">
-                        Column
-                    </div>
-                    <div class="col">
-                        Column
-                    </div>
-                    <div class="col">
-                        Column
+                    <div class="col-3">
+                        <div class="flip">
+                            <img class="card card-style" src="assets/images/dog3.jpg" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        Column
+                <div class="row mb-3">
+                    <div class="col-3">
+                        <div class="flip">
+                            <img class="card card-style" src="assets/images/dog4.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="col">
-                        Column
+                    <div class="col-3">
+                        <div class="flip">
+                            <img class="card card-style" src="assets/images/dog4.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="col">
-                        Column
+                    <div class="col-3">
+                        <div class="flip">
+                            <img class="card card-style" src="assets/images/dog5.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="col">
-                        Column
+                    <div class="col-3">
+                        <div class="flip">
+                            <img class="card card-style" src="assets/images/dog5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-3">
+                            <div class="flip">
+                                <img class="card card-style" src="assets/images/dog6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="flip">
+                                <img class="card card-style" src="assets/images/dog6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="flip">
+                                <img class="card card-style" src="assets/images/dog7.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="flip">
+                                <img class="card card-style" src="assets/images/dog7.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-    </div>
-
-    </main>
-    <section id="buttons">
-        <button class="btn btn-light" id="restart-btn" onclick="restartGame()">Restart</button>
-        <a href="index.html" class="btn btn-light" id="htp-btn" role="button">How to play</a>
-    </section>
-
+        </main>
+        <section id="buttons">
+            <button class="btn btn-light" id="restart-btn" onclick="restartGame()">Restart</button>
+            <a href="index.html" class="btn btn-light" id="htp-btn" role="button">How to play</a>
+        </section>
     </div>
     <!-- local script -->
     <script src="scripts/game.js"></script>
