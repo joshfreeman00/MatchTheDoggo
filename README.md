@@ -88,6 +88,7 @@ The wireframes for the Game can be viewed here.
 
 ## Testing
 
+* Theres a bug that doesn't allow the shuffling funcion to shuffle the cards in the pool all together.
 - I fully acknowledge and understand that, in a real-world scenario, an extensive set of Jest tests would be more comprehensive.
 
 ## Deployment
@@ -115,6 +116,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 * [Google Fonts](https://fonts.google.com/) - For the Fredoka font that was used.
 * [w3schools](https://www.w3schools.com/default.asp) - For the consistent help throughout.
   - The code for the flipping animationan be found [here.](https://www.w3schools.com/howto/howto_css_flip_card.asp)
+  - Help with the modal can be found [here.](https://www.w3schools.com/howto/howto_css_modals.asp)
 
 * [Stack Overflow](https://stackoverflow.com/) - For help debugging and fixes throughout.
   - The code for testing the restart button can be found [here.](https://stackoverflow.com/questions/55712640/jest-testing-window-location-reload)
