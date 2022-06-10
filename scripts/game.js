@@ -74,9 +74,18 @@ let totalMoves = 0;
  */
 function incrementPairs() {
     pairs++;
+    document.getElementById("pairs")
     if (pairs === totalCards / 2) {
         alert("You win!")
     }
+};
+
+/**
+ * Increment moves for every card clicked
+ */
+function incrementMoves() {
+    pairs++;
+    document.getElementById("moves")
 };
 
 //modal scripting
