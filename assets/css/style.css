@@ -54,6 +54,11 @@ body {
     margin-right: auto;
 }
 
+.card {
+    background: none;
+    border: none;
+}
+
 /*The following code was sourced from w3schools*/
 .flip-card {
     background-color: transparent;
