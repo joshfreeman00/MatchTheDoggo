@@ -27,7 +27,7 @@
             </div>
             <div class="row mt-5">
                 <div class="col-4">
-                    <h3>Time: <span id="timer"></span></h3>
+                    <h3>Time: <span id="timer">00:00</span></h3>
                 </div>
                 <div class="col-4">
                     <h3>Moves: <span id="moves">0</span></h3>
@@ -206,9 +206,10 @@
                 </div>
             </div>
         </main>
-        <section class="buttons">
-            <button class="btn btn-light box-shadow" id="restart-btn" onclick="restartGame()">Restart</button>
-            <a href="index.html" class="btn btn-light box-shadow" id="htp-btn" role="button">How to play</a>
+        <section>
+            <button class="btn btn-danger box-shadow game-btn">Play</button>
+            <button class="btn btn-light box-shadow game-btn" onclick="restartGame()">Restart</button>
+            <a href="index.html" class="btn btn-light box-shadow game-btn" role="button">How to play</a>
         </section>
     </div>
     <!-- local script -->
