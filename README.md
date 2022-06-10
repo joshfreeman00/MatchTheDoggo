@@ -120,6 +120,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
   - The code for testing the restart button can be found [here.](https://stackoverflow.com/questions/55712640/jest-testing-window-location-reload)
 * My mentor - For helpful tips and debugging.
 * [Unsplash](https://unsplash.com/) - All the images used within the web page were sourced from here.
+* [tinloof.com](https://tinloof.com/blog/how-to-build-a-stopwatch-with-html-css-js-react-part-2) - Fundemental code for the timer.
 
 
 ## Acknowledgements
