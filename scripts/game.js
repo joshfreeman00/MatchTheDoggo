@@ -79,11 +79,30 @@ function incrementPairs() {
     }
 };
 
+//modal scripting
 
+//set variables for the modal
+let modal = getElementById("htp-modal");
+let htpBtn = getElementById("htp");
+let closeBtn = getElementsByClassName("close");
 
+/**
+ * Calls the modal to open when the 'How to play' is clicked
+ */
+htpBtn.onclick = function () {
+    modal.style.display = "block";
+};
 
+/**
+ * When the user clicks the clse button, the modal closes
+ */
+closeBtn.onclick = function () {
+    modal.style.display = "none";
+};
 
-//function to restart the game
+/**
+ * restarts the game by refreshing the window
+ */
 function restartGame() {
     window.location.reload();
 };

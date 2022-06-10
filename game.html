@@ -210,7 +210,21 @@
             <button class="btn btn-danger box-shadow game-btn" id="play-btn">Play</button>
             <button class="btn btn-light box-shadow game-btn" onclick="restartGame()">Restart</button>
             <a href="index.html" class="btn btn-light box-shadow game-btn" role="button">How to play</a>
+            <button class="btn btn-light box-shadow game-btn" id="htp">How to play</button>
         </section>
+    </div>
+    <!-- modal -->
+    <div id="htp-modal" class="modal">
+        <!-- modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h4>How to play</h4>
+            <p>1. click on a card to flip it over.</p>
+            <p>2. click on another card.</p>
+            <p>3. If the pair you flipped are identical, they will stay flipped and you get a point!</p>
+            <p>4. If they are not identical, they will flip back over and you'll have to try again!</p>
+            <p>5. Find all the pairs to win!</p>
+        </div>
     </div>
     <!-- local script -->
     <script src="scripts/game.js"></script>
