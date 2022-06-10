@@ -48,12 +48,12 @@ As a games developer I want;
 
 * Instructions alert that shows how to play the game.
 * The game page that includes:
-- 12 cards, with 6 pairs.
-- A timer in the top left of the page.
-- A reset button underneath the cards that resets the scores and randomises the cards, also resets timer.
-- A help button underneath the cards that once clicked, an alert pops up with instructions.
-- A score of the amount of moves the user has done and the amount of pairs, just above the cards.
-- Social media links at the bottom of the page.
+  - 12 cards, with 6 pairs.
+  - A timer in the top left of the page.
+  - A reset button underneath the cards that resets the scores and randomises the cards, also resets timer.
+  - A help button underneath the cards that once clicked, an alert pops up with instructions.
+  - A score of the amount of moves the user has done and the amount of pairs, just above the cards.
+  - Social media links at the bottom of the page.
 * Game cards to be flipped like in real life.
 
 ## Wireframes
@@ -114,7 +114,10 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 * [Bootstrap v5.2](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - The grid system.
 * [Google Fonts](https://fonts.google.com/) - For the Fredoka font that was used.
 * [w3schools](https://www.w3schools.com/default.asp) - For the consistent help throughout.
+  - The code for the flipping animationan be found [here.](https://www.w3schools.com/howto/howto_css_flip_card.asp)
+
 * [Stack Overflow](https://stackoverflow.com/) - For help debugging and fixes throughout.
+  - The code for testing the restart button can be found [here.](https://stackoverflow.com/questions/55712640/jest-testing-window-location-reload)
 * My mentor - For helpful tips and debugging.
 * [Unsplash](https://unsplash.com/) - All the images used within the web page were sourced from here.
 
