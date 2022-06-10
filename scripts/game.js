@@ -82,23 +82,23 @@ function incrementPairs() {
 //modal scripting
 
 //set variables for the modal
-let modal = getElementById("htp-modal");
-let htpBtn = getElementById("htp");
-let closeBtn = getElementsByClassName("close");
+let modal = document.getElementById("htp-modal");
+let htpBtn = document.getElementById("htp");
+let closeBtn = document.getElementsByClassName("close");
 
 /**
  * Calls the modal to open when the 'How to play' is clicked
  */
-htpBtn.onclick = function () {
+$(htpBtn).click(function () {
     modal.style.display = "block";
-};
+})
 
 /**
  * When the user clicks the clse button, the modal closes
  */
-closeBtn.onclick = function () {
+$(closeBtn).click(function () {
     modal.style.display = "none";
-};
+})
 
 /**
  * restarts the game by refreshing the window
