@@ -4,15 +4,11 @@ body {
     font-family: "Fredoka", sans-serif;
     background-color: #198754;
     color: #fff;
+    text-align: center;
 }
 
 #title {
-    text-align: center;
     margin-top: 10px;
-}
-
-#welcome {
-    text-align: center;
 }
 
 #instrucions {
@@ -21,6 +17,7 @@ body {
     border-radius: 5px;
     padding: 20px;
     color: #000;
+    text-align: initial;
 }
 
 .box-shadow {
@@ -29,10 +26,6 @@ body {
 
 #play-area {
     margin: 50px 100px;
-}
-
-.buttons {
-    text-align: center;
 }
 
 #restart-btn {
