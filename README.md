@@ -115,14 +115,13 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 * [Bootstrap v5.2](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - The grid system.
 * [Google Fonts](https://fonts.google.com/) - For the Fredoka font that was used.
 * [w3schools](https://www.w3schools.com/default.asp) - For the consistent help throughout.
-  - The code for the flipping animationan be found [here.](https://www.w3schools.com/howto/howto_css_flip_card.asp)
   - Help with the modal can be found [here.](https://www.w3schools.com/howto/howto_css_modals.asp)
-
 * [Stack Overflow](https://stackoverflow.com/) - For help debugging and fixes throughout.
   - The code for testing the restart button can be found [here.](https://stackoverflow.com/questions/55712640/jest-testing-window-location-reload)
 * My mentor - For helpful tips and debugging.
 * [Unsplash](https://unsplash.com/) - All the images used within the web page were sourced from here.
 * [tinloof.com](https://tinloof.com/blog/how-to-build-a-stopwatch-with-html-css-js-react-part-2) - Fundemental code for the timer.
+* [Dave DeSandro](https://codepen.io/desandro/pen/LmWoWe) - Fundemental code for flipping cards animation.
 
 
 ## Acknowledgements
