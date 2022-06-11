@@ -73,14 +73,15 @@ body {
 }
 
 .scene {
-    width: 200px;
-    height: 260px;
-    margin: 40px 0;
+    width: 10rem;
+    height: 12rem;
     perspective: 600px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+/* code for flipping animation - foundations by Dave DeSandro (see credits/README.md) */
 
 .card-structure {
     width: 100%;
@@ -119,14 +120,11 @@ body {
     border-radius: 5px;
 }
 
+/* media queries */
 
 @media screen and (max-width: 999px) {
 
-    .card-style,
-    .flip-card-front,
-    .flip-card-back,
-    .flip-card-inner,
-    .flip-card {
+    .scene {
         width: 8em;
         height: 9em;
     }
@@ -134,11 +132,7 @@ body {
 
 @media screen and (max-width: 768px) {
 
-    .card-style,
-    .flip-card-front,
-    .flip-card-back,
-    .flip-card-inner,
-    .flip-card {
+    .scene {
         width: 6em;
         height: 7em;
     }
