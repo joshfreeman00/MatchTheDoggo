@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".card-total");
 const totalCards = cards.length;
 
 /**
@@ -9,6 +9,14 @@ function shuffleCards() {
         card.style.order = Math.floor(Math.random() * 12);
     });
 };
+
+var cardFlip = document.querySelectorAll('.card-structure');
+for (let i = 0; i < cardFlip.length; i++) {
+    cardFlip[i].addEventListener('click', function () {
+        cardFlip[i].classList.toggle('is-flipped');
+    });
+}
+
 
 //Once the page has fully loaded it calls the function to shuffle the cards
 window.onload = () => {
