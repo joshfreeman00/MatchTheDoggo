@@ -1,6 +1,10 @@
 const cards = document.querySelectorAll(".card-total");
 const totalCards = cards.length;
 
+//score values for the start of a new game
+let pairs = 0;
+let totalMoves = 0;
+
 /**
  * Shuffles the cards
  */
@@ -10,12 +14,57 @@ function shuffleCards() {
     });
 };
 
+/**
+ * Increment pairs value once a pair has been found
+ */
+function incrementPairs() {
+    pairs++
+    if (pairs === totalCards / 2) {
+        alert("You win!")
+    }
+};
+
+/**
+ * Increment moves for every card clicked
+ */
+function incrementMoves() {
+    totalMoves++;
+};
+
+//WIP
+
+let currentCards = [];
+
+function checkCard() {
+    currentCards.push(this);
+    let currentLength = currentCards.length;
+    if (currentLength === 2) {
+        if (currentCards[0] === currentCards[1]) {
+            pairedCards()
+        } else {
+            deselectCards();
+        };
+    };
+};
+
+function pairedCards() {
+    currentCards[0].classList.add('.card-disabled');
+    currentCards[1].classList.add('.card-disabled');
+    currentCards = [];
+    incrementPairs();
+};
+
+function deselectCards() {
+    currentCards = [];
+};
+
 //Once a card has been clicked, it flips the card using this function
 var cardFlip = document.querySelectorAll('.card-structure');
 for (let i = 0; i < cardFlip.length; i++) {
     cardFlip[i].addEventListener('click', function () {
-        cardFlip[i].classList.toggle('is-flipped');
-        // cardFlip[i].classList.toggle('card-disabled');
+        cardFlip[i].classList.toggle('is-flipped', 'card-disabled');
+        checkCard();
+        incrementMoves();
     });
 }
 
@@ -75,27 +124,6 @@ function start() {
     }, 10);
 };
 
-//score values for the start of a new game
-let pairs = 0;
-let totalMoves = 0;
-
-/**
- * Increment pairs value once a pair has been found
- */
-function incrementPairs() {
-    pairs++
-    if (pairs === totalCards / 2) {
-        alert("You win! Your time was | ${#timer}")
-    }
-};
-
-/**
- * Increment moves for every card clicked
- */
-function incrementMoves() {
-    totalMoves++;
-};
-
 //modal scripting
 
 //set variables for the modal
@@ -126,29 +154,4 @@ function restartGame() {
 
 module.exports = {
     restartGame
-};
-
-//WIP
-
-let currentCards = [];
-
-function checkCard() {
-    currentCards.push(this);
-    let currentLength = currentCards.length;
-    if (currentLength === 2) {
-        if (currentCards[0] === currentCards[1]) {
-            Paired()
-            incrementPairs();
-        } else {
-            deselectCards();
-        }
-    }
-};
-
-function Paired() {
-    currentCards = [];
-};
-
-function deselectCards() {
-    currentCards = [];
 };
