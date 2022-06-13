@@ -16,7 +16,6 @@ for (let i = 0; i < cardFlip.length; i++) {
     cardFlip[i].addEventListener('click', function () {
         cardFlip[i].classList.toggle('is-flipped');
         // cardFlip[i].classList.toggle('card-disabled');
-        incrementMoves()
     });
 }
 
@@ -127,4 +126,29 @@ function restartGame() {
 
 module.exports = {
     restartGame
+};
+
+//WIP
+
+let currentCards = [];
+
+function checkCard() {
+    currentCards.push(this);
+    let currentLength = currentCards.length;
+    if (currentLength === 2) {
+        if (currentCards[0] === currentCards[1]) {
+            Paired()
+            incrementPairs();
+        } else {
+            deselectCards();
+        }
+    }
+};
+
+function Paired() {
+    currentCards = [];
+};
+
+function deselectCards() {
+    currentCards = [];
 };
