@@ -120,6 +120,13 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
   - The code for testing the restart button can be found [here.](https://stackoverflow.com/questions/55712640/jest-testing-window-location-reload)
 * My mentor - For helpful tips and debugging.
 * [Unsplash](https://unsplash.com/) - All the images used within the web page were sourced from here.
+ - Image for dog2 can be found [here.](https://unsplash.com/photos/JNm1dAElVtE)
+ - Image for dog3 can be found [here.](https://unsplash.com/photos/5Vr_RVPfbMI)
+ - Image for dog4 can be found [here.](https://unsplash.com/photos/Qb7D1xw28Co)
+ - Image for dog5 can be found [here.](https://unsplash.com/photos/k1LNP6dnyAE)
+ - Image for dog6 can be found [here.](https://unsplash.com/photos/Mv9hjnEUHR4)
+ - Image for dog7 can be found [here.](https://unsplash.com/photos/brFsZ7qszSY)
+ - The image for the the back of the card can be found [here.](https://unsplash.com/photos/ijAuOcDsw7s)
 * [tinloof.com](https://tinloof.com/blog/how-to-build-a-stopwatch-with-html-css-js-react-part-2) - Fundemental code for the timer.
 * [Dave DeSandro](https://codepen.io/desandro/pen/LmWoWe) - Fundemental code for flipping cards animation.
 
