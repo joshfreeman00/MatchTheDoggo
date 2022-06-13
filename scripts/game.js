@@ -10,10 +10,13 @@ function shuffleCards() {
     });
 };
 
+//Once a card has been clicked, it flips the card using this function
 var cardFlip = document.querySelectorAll('.card-structure');
 for (let i = 0; i < cardFlip.length; i++) {
     cardFlip[i].addEventListener('click', function () {
         cardFlip[i].classList.toggle('is-flipped');
+        // cardFlip[i].classList.toggle('card-disabled');
+        incrementMoves()
     });
 }
 
@@ -81,10 +84,9 @@ let totalMoves = 0;
  * Increment pairs value once a pair has been found
  */
 function incrementPairs() {
-    pairs++;
-    document.getElementById("pairs")
+    pairs++
     if (pairs === totalCards / 2) {
-        alert("You win!")
+        alert("You win! Your time was | ${#timer}")
     }
 };
 
@@ -92,8 +94,7 @@ function incrementPairs() {
  * Increment moves for every card clicked
  */
 function incrementMoves() {
-    pairs++;
-    document.getElementById("moves")
+    totalMoves++;
 };
 
 //modal scripting
@@ -111,7 +112,7 @@ $(htpBtn).click(function () {
 })
 
 /**
- * When the user clicks the clse button, the modal closes
+ * When the user clicks the close button, the modal closes
  */
 $(closeBtn).click(function () {
     modal.style.display = "none";
