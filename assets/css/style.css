@@ -32,6 +32,10 @@ body {
     margin: 0 20px;
 }
 
+#button-bar {
+    margin-bottom: 20px;
+}
+
 /* how to play moda pop up */
 .modal {
     display: none;
@@ -94,6 +98,10 @@ body {
 
 .card-structure.is-flipped {
     transform: rotateY(180deg);
+}
+
+.card-structure.card-disabled {
+    pointer-events: none;
 }
 
 .cardFace {
