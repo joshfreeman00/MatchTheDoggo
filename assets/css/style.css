@@ -90,42 +90,39 @@ body {
 .card-structure {
     width: 100%;
     height: 100%;
-    transition: transform 1s;
+    transform: scale(1);
+    transition: transform .5s;
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 .card-structure.is-flipped {
     transform: rotateY(180deg);
 }
 
-.card-structure.card-disabled {
+/* .card-structure.card-disabled {
     pointer-events: none;
+} */
+
+*/ .card-structure:active {
+    transform: scale(0.97);
+    transition: transform .2s;
 }
 
-.cardFace {
-    position: absolute;
+.cardFront,
+.cardBack {
     width: 100%;
     height: 100%;
-    line-height: 260px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    -webkit-backface-visibility: hidden;
+    position: absolute;
+    border-radius: 5px;
     backface-visibility: hidden;
 }
 
 .cardFront {
-    background: red;
-    border-radius: 5px;
-}
-
-.cardBack {
-    background: blue;
     transform: rotateY(180deg);
-    border-radius: 5px;
 }
 
 /* media queries */
