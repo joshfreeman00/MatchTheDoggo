@@ -103,9 +103,9 @@ body {
     transform: rotateY(180deg);
 }
 
-/* .card-structure.card-disabled {
+.card-disabled {
     pointer-events: none;
-} */
+}
 
 */ .card-structure:active {
     transform: scale(0.97);

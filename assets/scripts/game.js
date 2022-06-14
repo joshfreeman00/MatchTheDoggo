@@ -17,6 +17,7 @@ let totalMoves = 0;
  */
 function shuffleCards() {
     cards.forEach((card) => {
+        card.classList.add('card-disabled');
         card.style.order = Math.floor(Math.random() * 12);
     });
 };
@@ -40,16 +41,6 @@ function incrementMoves() {
     movesSpan.innerText = totalMoves;
 };
 
-//Once a card has been clicked, it flips the card using this function
-// var cardFlip = document.querySelectorAll('.card-structure');
-// for (let i = 0; i < cardFlip.length; i++) {
-//     cardFlip[i].addEventListener('click', function () {
-//         cardFlip[i].classList.toggle('is-flipped', 'card-disabled');
-//         checkCard();
-//         incrementMoves();
-//     });
-// };
-
 for (let i = 0; i < cardFlip.length; i++) {
     cardFlip[i].addEventListener('click', flipCard);
 };
@@ -57,6 +48,7 @@ for (let i = 0; i < cardFlip.length; i++) {
 function flipCard() {
     incrementMoves();
     this.classList.add('is-flipped');
+    this.closest('.card-total').classList.add('card-disabled');
     if (!isCardFlipped) {
         isCardFlipped = true;
         firstSelect = this;
@@ -69,13 +61,22 @@ function flipCard() {
 };
 
 function checkCards() {
+    let activeCards = document.querySelectorAll('.card-total:not(.card-disabled)');
+    activeCards.forEach(card => {
+        console.log(card);
+        card.classList.add('card-disabled');
+    });
     if (firstSelect.dataset.dog === secondSelect.dataset.dog) {
         disablePair();
         incrementPairs();
-        return;
     } else {
         unflipCards();
     }
+    setTimeout(() => {
+        activeCards.forEach(card => {
+            card.classList.remove('card-disabled');
+        });
+    }, 1500);
 };
 
 function disablePair() {
@@ -87,7 +88,9 @@ function unflipCards() {
     setTimeout(() => {
         firstSelect.classList.remove('is-flipped');
         secondSelect.classList.remove('is-flipped');
-    }, 1500)
+        firstSelect.closest('.card-total').classList.remove('card-disabled');
+        secondSelect.closest('.card-total').classList.remove('card-disabled');
+    }, 1500);
 };
 
 
@@ -140,6 +143,9 @@ function print(txt) {
  * starts the timer once the play button has been pressed
  */
 function start() {
+    cards.forEach((card) => {
+        card.classList.remove('card-disabled');
+    });
     startTime = Date.now() - elapsedTime;
     timerInterval = setInterval(function printTime() {
         elapsedTime = Date.now() - startTime;
