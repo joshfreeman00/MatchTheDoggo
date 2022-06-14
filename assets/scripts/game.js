@@ -1,6 +1,8 @@
 //Game variables
-const cards = document.querySelectorAll(".card-total");
+const cards = document.querySelectorAll('.card-total');
 const totalCards = cards.length;
+let movesSpan = document.getElementById('moves');
+let pairsSpan = document.getElementById('pairs');
 
 const cardFlip = document.querySelectorAll('.card-structure');
 let firstSelect, secondSelect;
@@ -23,9 +25,10 @@ function shuffleCards() {
  * Increment pairs value once a pair has been found
  */
 function incrementPairs() {
-    pairs++
+    pairs++;
+    pairsSpan.innerText = pairs;
     if (pairs === totalCards / 2) {
-        alert("You win!")
+        alert('You win!')
     }
 };
 
@@ -34,6 +37,7 @@ function incrementPairs() {
  */
 function incrementMoves() {
     totalMoves++;
+    movesSpan.innerText = totalMoves;
 };
 
 //Once a card has been clicked, it flips the card using this function
@@ -51,6 +55,7 @@ for (let i = 0; i < cardFlip.length; i++) {
 };
 
 function flipCard() {
+    incrementMoves();
     this.classList.add('is-flipped');
     if (!isCardFlipped) {
         isCardFlipped = true;
@@ -108,8 +113,8 @@ function timeToString(time) {
     let diffInSec = (diffInMin - mm) * 60;
     let ss = Math.floor(diffInSec);
 
-    let formattedMM = mm.toString().padStart(2, "0");
-    let formattedSS = ss.toString().padStart(2, "0");
+    let formattedMM = mm.toString().padStart(2, '0');
+    let formattedSS = ss.toString().padStart(2, '0');
 
     return `${formattedMM}:${formattedSS}`;
 };
@@ -128,7 +133,7 @@ let timerInterval;
  * modifies the innerHTMl of the element with the id of 'timer'
  */
 function print(txt) {
-    document.getElementById("timer").innerHTML = txt;
+    document.getElementById('timer').innerHTML = txt;
 };
 
 /**
@@ -145,22 +150,22 @@ function start() {
 //modal scripting
 
 //set variables for the modal
-let modal = document.getElementById("htp-modal");
-let htpBtn = document.getElementById("htp");
-let closeBtn = document.getElementsByClassName("close");
+let modal = document.getElementById('htp-modal');
+let htpBtn = document.getElementById('htp');
+let closeBtn = document.getElementsByClassName('close');
 
 /**
  * Calls the modal to open when the 'How to play' is clicked
  */
 $(htpBtn).click(function () {
-    modal.style.display = "block";
+    modal.style.display = 'block';
 })
 
 /**
  * When the user clicks the close button, the modal closes
  */
 $(closeBtn).click(function () {
-    modal.style.display = "none";
+    modal.style.display = 'none';
 })
 
 /**
