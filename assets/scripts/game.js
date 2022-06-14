@@ -29,7 +29,8 @@ function incrementPairs() {
     pairs++;
     pairsSpan.innerText = pairs;
     if (pairs === totalCards / 2) {
-        alert('You win!')
+        alert('You win!');
+        clearInterval(timerInterval);
     }
 };
 
@@ -146,12 +147,16 @@ function start() {
     cards.forEach((card) => {
         card.classList.remove('card-disabled');
     });
+    startTimer();
+};
+
+function startTimer() {
     startTime = Date.now() - elapsedTime;
     timerInterval = setInterval(function printTime() {
         elapsedTime = Date.now() - startTime;
         print(timeToString(elapsedTime));
     }, 10);
-};
+}
 
 //modal scripting
 
