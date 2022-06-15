@@ -86,8 +86,8 @@ body {
 }
 
 .scene {
-    width: 10rem;
-    height: 12rem;
+    width: 8rem;
+    height: 9rem;
     perspective: 600px;
     display: block;
     margin-left: auto;
@@ -141,12 +141,6 @@ body {
 /* media queries */
 
 @media screen and (max-width: 999px) {
-
-    .scene {
-        width: 8em;
-        height: 9em;
-    }
-
     #play-area {
         margin: unset;
     }
