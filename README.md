@@ -128,7 +128,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
  - Image for dog7 can be found [here.](https://unsplash.com/photos/brFsZ7qszSY)
  - The image for the the back of the card can be found [here.](https://unsplash.com/photos/ijAuOcDsw7s)
 * [tinloof.com](https://tinloof.com/blog/how-to-build-a-stopwatch-with-html-css-js-react-part-2) - Fundemental code for the timer.
-* [Dave DeSandro](https://codepen.io/desandro/pen/LmWoWe) - Fundemental code for flipping cards animation.
+* [Marina Ferreira](https://marina-ferreira.github.io/tutorials/js/memory-game/) - Fundemental code for flipping cards animation.
 
 
 ## Acknowledgements
