@@ -7,8 +7,13 @@ body {
     text-align: center;
 }
 
-#title {
+.title {
     margin-top: 10px;
+}
+
+#link-thp {
+    text-decoration: none;
+    color: #fff;
 }
 
 #instrucions {
@@ -133,6 +138,10 @@ body {
         width: 8em;
         height: 9em;
     }
+
+    #play-area {
+        margin: unset;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -144,5 +153,16 @@ body {
 
     .modalContent {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .scene {
+        width: 5rem;
+        height: 6rem;
+    }
+
+    .game-btn {
+        margin: unset;
     }
 }
