@@ -29,8 +29,10 @@ function incrementPairs() {
     pairs++;
     pairsSpan.innerText = pairs;
     if (pairs === totalCards / 2) {
-        alert('You win!');
         clearInterval(timerInterval);
+        setTimeout(() => {
+            alert('You win!');
+        }, 500)
     }
 };
 
@@ -77,7 +79,7 @@ function checkCards() {
         activeCards.forEach(card => {
             card.classList.remove('card-disabled');
         });
-    }, 1500);
+    }, 1000);
 };
 
 function disablePair() {
@@ -91,7 +93,7 @@ function unflipCards() {
         secondSelect.classList.remove('is-flipped');
         firstSelect.closest('.card-total').classList.remove('card-disabled');
         secondSelect.closest('.card-total').classList.remove('card-disabled');
-    }, 1500);
+    }, 1000);
 };
 
 
