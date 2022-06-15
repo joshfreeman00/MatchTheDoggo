@@ -85,8 +85,14 @@ The wireframes for the Game can be viewed here.
 * [Git](https://git-scm.com/) - Version control.
 * [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
 * [Google Fonts](https://fonts.google.com/) - For the two fonts that were used.
+* [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - For the grid system and buttons.
+* Google Chrome Dev tools - for proofreading code.
+* [Am I Responsive?](https://ui.dev/amiresponsive) - To see the responsiveness of the website on multiple devices.
+* [WebAIM](https://webaim.org/resources/contrastchecker/#:~:text=WCAG%202.0%20level%20AA%20requires,such%20as%20form%20input%20borders) - Used to check the contrast between foreground and background colours.
 
 ## Testing
+
+To view all testing documentation, click [here.](TESTING.md)
 
 * Theres a bug that doesn't allow the shuffling funcion to shuffle the cards in the pool all together.
 - I fully acknowledge and understand that, in a real-world scenario, an extensive set of Jest tests would be more comprehensive.
@@ -119,14 +125,14 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 * [Stack Overflow](https://stackoverflow.com/) - For help debugging and fixes throughout.
   - The code for testing the restart button can be found [here.](https://stackoverflow.com/questions/55712640/jest-testing-window-location-reload)
 * My mentor - For helpful tips and debugging.
-* [Unsplash](https://unsplash.com/) - All the images used within the web page were sourced from here.
+* [Unsplash](https://unsplash.com/) - The images used for the cards within the game were sourced from here.
  - Image for dog2 can be found [here.](https://unsplash.com/photos/JNm1dAElVtE)
  - Image for dog3 can be found [here.](https://unsplash.com/photos/5Vr_RVPfbMI)
  - Image for dog4 can be found [here.](https://unsplash.com/photos/Qb7D1xw28Co)
  - Image for dog5 can be found [here.](https://unsplash.com/photos/k1LNP6dnyAE)
  - Image for dog6 can be found [here.](https://unsplash.com/photos/Mv9hjnEUHR4)
  - Image for dog7 can be found [here.](https://unsplash.com/photos/brFsZ7qszSY)
- - The image for the the back of the card can be found [here.](https://unsplash.com/photos/ijAuOcDsw7s)
+* [pngset] - The image for the back of the card can be found [here.](https://pngset.com/download-free-png-kooct)
 * [tinloof.com](https://tinloof.com/blog/how-to-build-a-stopwatch-with-html-css-js-react-part-2) - Fundemental code for the timer.
 * [Marina Ferreira](https://marina-ferreira.github.io/tutorials/js/memory-game/) - Fundemental code for flipping cards animation.
 
