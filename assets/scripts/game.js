@@ -20,7 +20,7 @@ function shuffleCards() {
         card.classList.add('card-disabled');
         card.style.order = Math.floor(Math.random() * 12);
     });
-};
+}
 
 /**
  * Increment pairs value once a pair has been found
@@ -34,7 +34,7 @@ function incrementPairs() {
             alert('You win!');
         }, 500)
     }
-};
+}
 
 /**
  * Increment moves for every card clicked
@@ -42,12 +42,17 @@ function incrementPairs() {
 function incrementMoves() {
     totalMoves++;
     movesSpan.innerText = totalMoves;
-};
+}
 
+//for loop to add event listeners
 for (let i = 0; i < cardFlip.length; i++) {
     cardFlip[i].addEventListener('click', flipCard);
-};
+}
 
+/**
+ * Flips the card selected
+ * @returns First and second cards selected and matches them
+ */
 function flipCard() {
     incrementMoves();
     this.classList.add('is-flipped');
@@ -61,8 +66,11 @@ function flipCard() {
         isCardFlipped = false;
         checkCards();
     }
-};
+}
 
+/**
+ * Compares both cards that are selected with their data-set and sees if they match
+ */
 function checkCards() {
     let activeCards = document.querySelectorAll('.card-total:not(.card-disabled)');
     activeCards.forEach(card => {
@@ -80,13 +88,19 @@ function checkCards() {
             card.classList.remove('card-disabled');
         });
     }, 1000);
-};
+}
 
+/**
+ * Disables the event listener that enables the cards to flip
+ */
 function disablePair() {
     firstSelect.removeEventListener('click', flipCard);
     secondSelect.removeEventListener('click', flipCard);
-};
+}
 
+/**
+ * Flips the cards back over if they do not match
+ */
 function unflipCards() {
     setTimeout(() => {
         firstSelect.classList.remove('is-flipped');
@@ -94,16 +108,16 @@ function unflipCards() {
         firstSelect.closest('.card-total').classList.remove('card-disabled');
         secondSelect.closest('.card-total').classList.remove('card-disabled');
     }, 1000);
-};
+}
 
 
 
 //Once the page has fully loaded it calls the function to shuffle the cards
 window.onload = () => {
     shuffleCards();
-};
+}
 
-//function for the timer, using tinloof.com for guidance and help, but modifying the code to suit the game
+//Function for the timer, using tinloof.com for guidance and help, but modifying the code to suit the game
 let time = 10000000;
 /**
  * Coverts the time into the format of minutes and seconds
@@ -123,34 +137,34 @@ function timeToString(time) {
     let formattedSS = ss.toString().padStart(2, '0');
 
     return `${formattedMM}:${formattedSS}`;
-};
+}
 
-//create an event listener so when the the play button is pressed, the function 'start' is called
+//Create an event listener so when the the play button is pressed, the function 'start' is called
 let playBtn = document.getElementById('play-btn');
 playBtn.addEventListener('click', start);
 
 
-//set variables
+//Set variables
 let startTime;
 let elapsedTime = 0;
 let timerInterval;
 
 /**
- * modifies the innerHTMl of the element with the id of 'timer'
+ * Modifies the innerHTMl of the element with the id of 'timer'
  */
 function print(txt) {
     document.getElementById('timer').innerHTML = txt;
-};
+}
 
 /**
- * starts the timer once the play button has been pressed
+ * Starts the timer once the play button has been pressed
  */
 function start() {
     cards.forEach((card) => {
         card.classList.remove('card-disabled');
     });
     startTimer();
-};
+}
 
 function startTimer() {
     startTime = Date.now() - elapsedTime;
@@ -160,9 +174,9 @@ function startTimer() {
     }, 10);
 }
 
-//modal scripting
+//Modal scripting
 
-//set variables for the modal
+//Set variables for the modal
 let modal = document.getElementById('htp-modal');
 let htpBtn = document.getElementById('htp');
 let closeBtn = document.getElementsByClassName('close');
@@ -182,12 +196,12 @@ $(closeBtn).click(function () {
 })
 
 /**
- * restarts the game by refreshing the window
+ * Restarts the game by refreshing the window
  */
 function restartGame() {
     window.location.reload();
-};
+}
 
 if (typeof module !== 'undefined') module.exports = {
     restartGame
-};
+}
