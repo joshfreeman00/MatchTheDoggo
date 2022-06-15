@@ -6,7 +6,13 @@ To return to the readme click [here.](README.md)
 
 ### HTML validation
 
+- [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjoshfreeman00.github.io%2FMatchTheDoggo%2Findex.html)
 
+![index.html](docs/testing/index-html-val.png)
+
+- [game.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjoshfreeman00.github.io%2FMatchTheDoggo%2Fgame.html)
+
+![game.html](docs/testing/game-html-val.png)
 
 ### CSS validation
 
@@ -22,15 +28,21 @@ To return to the readme click [here.](README.md)
 
 - Mobile devices
 
-    ![game-mobile](*)
+    ![index-mobile](docs/testing/index-mobile.png)
+
+    ![game-mobile](docs/testing/game-mobile.png)
 
 - Tablet devices
 
-    ![game-tablet](*)
+    ![index-tablet](docs/testing/index-tablet.png)
+
+    ![game-tablet](docs/testing/game-tablet.png)
 
 - Desktop devices
 
-    ![game-desktop](*)
+    ![index-desktop](docs/testing/index-desktop.png)
+
+    ![game-desktop](docs/testing/game-desktop.png)
 
 ## Browser Compatibility
 
@@ -38,11 +50,11 @@ To return to the readme click [here.](README.md)
 
 - Chrome
 
-    ![chrome](*)
+    ![chrome](docs/testing/chrome-test.png)
 
 - Safari
 
-    ![safari](*)
+    ![safari](docs/testing/safari-test.png)
 
 
 ## Bugs
