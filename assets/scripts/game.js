@@ -180,19 +180,16 @@ function startTimer() {
 //Set variables for the modal
 let modal = document.getElementById('htp-modal');
 let htpBtn = document.getElementById('htp');
-let closeBtn = document.getElementsByClassName('close');
+let closeBtn = document.getElementById('close-btn');
 
-/**
- * Calls the modal to open when the 'How to play' is clicked
- */
-$(htpBtn).click(function () {
+//Calls the modal to open when the 'How to play' is clicked
+htpBtn.addEventListener('click', function() {
     modal.style.display = 'block';
 });
 
-/**
- * When the user clicks the close button, the modal closes
- */
-$(closeBtn).click(function () {
+
+//When the user clicks the close button, the modal closes
+closeBtn.addEventListener('click', function() {
     modal.style.display = 'none';
 });
 
