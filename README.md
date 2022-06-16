@@ -134,11 +134,19 @@ The wireframes for the Game can be viewed here.
 
 * index.html
 
-![How_to_play](docs/wireframes/landing-page.png)
+![home](docs/wireframes/landing-page.png)
+
+* index.html (mobile)
+
+![home-mobile](docs/wireframes/landing-page-mobile.png)
 
 * game.html
 
 ![game](docs/wireframes/game-page.png)
+
+* game.html (mobile)
+
+![game-mobile](docs/wireframes/game-page-mobile.png)
 
 * Modal
 
