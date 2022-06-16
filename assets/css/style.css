@@ -114,7 +114,6 @@ body {
 }
 
 /* code for flipping animation - foundations by Marina Ferreira (see credits/README.md) */
-
 .card-structure {
     width: 100%;
     height: 100%;
@@ -158,7 +157,6 @@ body {
 }
 
 /* media queries */
-
 @media screen and (max-width: 999px) {
     #play-area {
         margin: unset;
@@ -166,7 +164,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-
     .scene {
         width: 6em;
         height: 7em;
