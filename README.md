@@ -92,6 +92,8 @@ As a games developer I want;
 
 ![buttons-top](docs/testing/nav-buttons.png)
 
+![htp-modal](docs/testing/htp-modal.png)
+
 ### Game area
 
 * At the top of the game area are the stats that consist of the time, moves taken and pairs found.
