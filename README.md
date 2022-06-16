@@ -18,12 +18,13 @@ The goal for this project is to create a pair matching game that is both interac
 
 As a user I want the game to include;
 
-* A fun and engaging experience.
+* A fun and engaging experience while helping to improve my focus, attention and my memory skills.
 * Randomisation to increase longevity.
 * Instructions on how to play.
 * Colours that are subtle and attractive that have a theme and are not too distracting from the game.
 * A timer to show how fast I can complete said game.
 * A counter for the amount of moves I have completed and the amount of pairs I have.
+* A restart button to reset the game if required.
 
 ### Game Developer:
 
@@ -34,11 +35,13 @@ As a games developer I want;
 * The game to be simple and easy to play.
 * To include a timer.
 * To include a score and total moves.
+* The game does not start until the play button is clicked.
 
 ## Features
 
 ### Key features
 
+* Upon page load, the cards shuffle to a random position.
 * Be able to match the dogs.
 * A timer to show the time taken to complete the game.
 * Keep track of their game score and total moves.
