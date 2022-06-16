@@ -40,7 +40,6 @@ closeWin?.addEventListener('click', () => {
     win.style.display = 'none';
 });
 
-
 /**
  * Increment pairs value once a pair has been found
  */
@@ -128,8 +127,6 @@ function unflipCards() {
     }, 1000);
 }
 
-
-
 //Once the page has fully loaded it calls the function to shuffle the cards
 window.onload = () => {
     shuffleCards();
@@ -160,7 +157,6 @@ function timeToString(time) {
 //Create an event listener so when the the play button is pressed, the function 'start' is called
 let playBtn = document.getElementById('play-btn');
 playBtn?.addEventListener('click', start);
-
 
 //Set variables
 let startTime;
@@ -203,7 +199,6 @@ let closeBtn = document.getElementById('close-btn');
 htpBtn?.addEventListener('click', function() {
     htpModal.style.display = 'block';
 });
-
 
 //When the user clicks the close button, the modal closes
 closeBtn?.addEventListener('click', function() {

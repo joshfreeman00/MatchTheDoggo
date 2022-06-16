@@ -63,7 +63,7 @@ describe("Score values are set to 0 on page load", () => {
     test("Pairs value is set to 0", () => {
         expect(pairs).toEqual(0);
     });
-    
+
     test("Moves value is set to 0", () => {
         expect(totalMoves).toEqual(0);
     });
