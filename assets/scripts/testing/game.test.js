@@ -1,6 +1,5 @@
 /* jshint esversion: 11*/
 
-
 /**
  * @jest-environment jsdom
  */
@@ -19,7 +18,7 @@ beforeAll(() => {
     document.close();
 });
 
-//Code is taken from Stack Overflow, referenced in the Credits of the README.md
+//Code is used from Stack Overflow, referenced in the Credits of the README.md
 describe("function restarts game by reloading the page", () => {
     const original = window.location;
 
@@ -53,7 +52,6 @@ describe("function restarts game by reloading the page", () => {
     });
 });
 
-
 //test to see if the score values are set to 0 on page load
 describe("Score values are set to 0 on page load", () => {
     beforeAll(() => {
@@ -61,9 +59,11 @@ describe("Score values are set to 0 on page load", () => {
         let totalMoves = 7;
         restartGame();
     });
+
     test("Pairs value is set to 0", () => {
         expect(pairs).toEqual(0);
     });
+    
     test("Moves value is set to 0", () => {
         expect(totalMoves).toEqual(0);
     });

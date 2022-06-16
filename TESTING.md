@@ -79,7 +79,7 @@ To return to the readme click [here.](README.md)
 
 * Randomisation to increase longevity.
 * The game to be fun and unique every new game, no repetitiveness.
-    - This is achieved by shuffling the cards when the page loads and everytime the game is reset.
+    - This is achieved by shuffling the cards when the page loads and every time the game is reset.
 
 ![random1](docs/testing/randomization-1.png)
 
@@ -95,8 +95,8 @@ To return to the readme click [here.](README.md)
 ![htp-btn](docs/testing/htp-modal.png)
 
 * Colours that are subtle and attractive that have a theme and are not too distracting from the game.
-    - Utilizing a colour theme that has a high contrast accessibility rating, text and images are easy to read/see.
-    - The use of having a solid color as a back-ground doesn't distract the user so they do not lose focus while playing the game.
+    - Utilising a colour theme that has a high contrast accessibility rating, text and images are easy to read/see.
+    - The use of having a solid colour as a back-ground doesn't distract the user so they do not lose focus while playing the game.
 
 ![game-color-theme](docs/testing/game-desktop.png)
 
@@ -124,14 +124,14 @@ To return to the readme click [here.](README.md)
 ![restart-button](docs/testing/game-buttons.png)
 
 * The game does not start until the play button is clicked.
-    - The game has been developed so that the cards cannot be interacted with until the 'play' button has been clicked. This is required everytime the game has either loaded or restarted.
+    - The game has been developed so that the cards cannot be interacted with until the 'play' button has been clicked. This is required every time the game has either loaded or restarted.
     - As well as the card being inactive, the timer does not start until the 'play' button is also clicked.
 
 ![play-button](docs/testing/game-buttons.png)
 
 ## Bugs
 
-* ~~Theres was a bug that wouldn't allow the shuffling funcion to shuffle the cards in the pool all together.~~ This was fixed by removing the unnecessary bootstrap rows so that all cards were within the same parent element (row).
+* ~~Theres was a bug that wouldn't allow the shuffling function to shuffle the cards in the pool all together.~~ This was fixed by removing the unnecessary bootstrap rows so that all cards were within the same parent element (row).
 
 ### Unfixed bugs
 

@@ -1,6 +1,6 @@
 # Match The Doggo
 
-Match The Doggo is memory game that is designed for all ages. The instrutins are super easy to follow and the game helps with improving focus and memory and most importantly, the game is designed to have fun with its replayability!
+Match The Doggo is memory game that is designed for all ages. The instructions are super easy to follow and the game helps with improving focus and memory and most importantly, the game is designed to have fun with its replayability!
 
 A deployed link is available [here.](https://joshfreeman00.github.io/MatchTheDoggo/)
 
@@ -55,7 +55,7 @@ As a games developer I want;
   - 12 cards, with 6 pairs.
   - A timer in the top left of the page.
   - A reset button underneath the cards that resets the scores and randomises the cards, also resets timer.
-  - A help button underneath the cards that once clicked, an modal pops up with instructions.
+  - A help button underneath the cards that once clicked, a modal pops up with instructions.
   - A score of the amount of moves the user has done and the amount of pairs, just above the cards.
 * Game cards that flip when clicked on, just like in real life.
 
@@ -64,7 +64,7 @@ As a games developer I want;
 #### Title
 
 * The name of the website is located at the top of the page, along with a welcoming sentence.
-  - Both on the home page and game page, the title has the abiltiy of returning to the home page just by clicking on it.
+  - Both on the home page and game page, the title has the ability of returning to the home page just by clicking on it.
 
 ![title](docs/testing/title-welcome.png)
 
@@ -85,7 +85,7 @@ As a games developer I want;
 #### Title
 
 * Again the name of the website is located at the top of the page
-  - Both on the home page and game page, the title has the abiltiy of returning to the home page just by clicking on it.
+  - Both on the home page and game page, the title has the ability of returning to the home page just by clicking on it.
 
 ![title](docs/testing/game-title.png)
 
@@ -124,7 +124,7 @@ The images used are relevant to the games context.
 
 ### Colour scheme
 
-* The colour scheme of the game is green and white, these two colours provide excellent contrast and porvides a feel of nature and harmony throughout.
+* The colour scheme of the game is green and white, these two colours provide excellent contrast and provides a feel of nature and harmony throughout.
 
 ![colour-theme](docs/color-theme.jpeg)
 
@@ -155,7 +155,7 @@ The wireframes for the Game can be viewed here.
 
 * Modal
 
-![alert_htp](docs/wireframes/alert.png)
+![alert-htp](docs/wireframes/alert.png)
 
 ## Languages
 
@@ -215,8 +215,8 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
  - Image for dog6 can be found [here.](https://unsplash.com/photos/Mv9hjnEUHR4)
  - Image for dog7 can be found [here.](https://unsplash.com/photos/brFsZ7qszSY)
 * [pngset] - The image for the back of the card can be found [here.](https://pngset.com/download-free-png-kooct)
-* [tinloof.com](https://tinloof.com/blog/how-to-build-a-stopwatch-with-html-css-js-react-part-2) - Fundemental code for the timer.
-* [Marina Ferreira](https://marina-ferreira.github.io/tutorials/js/memory-game/) - Fundemental code for flipping cards animation.
+* [tinloof.com](https://tinloof.com/blog/how-to-build-a-stopwatch-with-html-css-js-react-part-2) - Fundamental code for the timer.
+* [Marina Ferreira](https://marina-ferreira.github.io/tutorials/js/memory-game/) - Fundamental code for flipping cards animation.
 
 
 ## Acknowledgements
