@@ -1,3 +1,5 @@
+/* jshint esversion: 11, jquery: true */
+
 //Game variables
 const cards = document.querySelectorAll('.card-total');
 const totalCards = cards.length;
@@ -8,7 +10,7 @@ const cardFlip = document.querySelectorAll('.card-structure');
 let firstSelect, secondSelect;
 let isCardFlipped = false;
 
-//score values for the start of a new game
+//Score values for the start of a new game
 let pairs = 0;
 let totalMoves = 0;
 
@@ -32,7 +34,7 @@ function incrementPairs() {
         clearInterval(timerInterval);
         setTimeout(() => {
             alert('You win!');
-        }, 500)
+        }, 500);
     }
 }
 
@@ -51,7 +53,7 @@ for (let i = 0; i < cardFlip.length; i++) {
 
 /**
  * Flips the card selected
- * @returns First and second cards selected and matches them
+ * returns first and second cards selected and matches them
  */
 function flipCard() {
     incrementMoves();
@@ -74,7 +76,6 @@ function flipCard() {
 function checkCards() {
     let activeCards = document.querySelectorAll('.card-total:not(.card-disabled)');
     activeCards.forEach(card => {
-        console.log(card);
         card.classList.add('card-disabled');
     });
     if (firstSelect.dataset.dog === secondSelect.dataset.dog) {
@@ -115,13 +116,13 @@ function unflipCards() {
 //Once the page has fully loaded it calls the function to shuffle the cards
 window.onload = () => {
     shuffleCards();
-}
+};
 
 //Function for the timer, using tinloof.com for guidance and help, but modifying the code to suit the game
-let time = 10000000;
+
 /**
  * Coverts the time into the format of minutes and seconds
- * @returns time in correct format
+ * returns time in correct format
  */
 function timeToString(time) {
     let diffInHrs = time / 3600000;
@@ -186,14 +187,14 @@ let closeBtn = document.getElementsByClassName('close');
  */
 $(htpBtn).click(function () {
     modal.style.display = 'block';
-})
+});
 
 /**
  * When the user clicks the close button, the modal closes
  */
 $(closeBtn).click(function () {
     modal.style.display = 'none';
-})
+});
 
 /**
  * Restarts the game by refreshing the window
@@ -204,4 +205,4 @@ function restartGame() {
 
 if (typeof module !== 'undefined') module.exports = {
     restartGame
-}
+};
