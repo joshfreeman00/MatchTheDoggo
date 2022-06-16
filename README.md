@@ -6,7 +6,7 @@ A deployed link is available [here.](https://joshfreeman00.github.io/MatchTheDog
 
 ## Showcase
 
-![showcase](link)
+![showcase](docs/testing/am-i-responsive.png)
 
 ## UX
 
@@ -29,8 +29,7 @@ As a games developer I want;
 
 * The game to be fun and unique every new game, no repetitiveness.
 * The game to include instructions on how to play.
-* To include external links to social media.
-* He game to be simple and easy to play.
+* The game to be simple and easy to play.
 * To include a timer.
 * To include a score and total moves.
 
@@ -42,7 +41,6 @@ As a games developer I want;
 * A timer to show the time taken to complete the game.
 * Keep track of their game score and total moves.
 * Instructions alert on how to play.
-* Links to social media platforms.
 
 ### Structure
 
