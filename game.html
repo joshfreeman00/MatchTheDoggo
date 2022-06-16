@@ -22,6 +22,10 @@
                     <h1 class="title"><a href="index.html" id="link-thp">Match the Doggo</a></h1>
                 </div>
             </div>
+            <section class="buttons-top">
+                <a href="index.html" class="btn btn-light box-shadow game-btn" role="button">Home</a>
+                <button class="btn btn-light box-shadow game-btn" id="htp">How to play</button>
+            </section>
             <div class="row mt-5">
                 <div class="col-4">
                     <h3>Time: <span id="timer">00:00</span></h3>
@@ -150,10 +154,9 @@
             </div>
         </div>
     </main>
-    <section id="button-bar">
+    <section class="buttons-bottom">
         <button class="btn btn-danger box-shadow game-btn" id="play-btn">Play</button>
         <button class="btn btn-light box-shadow game-btn" onclick="restartGame()">Restart</button>
-        <button class="btn btn-light box-shadow game-btn" id="htp">How to play</button>
     </section>
     <!-- how to play modal -->
     <aside id="htp-modal" class="modal">
