@@ -6,23 +6,27 @@ To return to the readme click [here.](README.md)
 
 ### HTML validation
 
-- [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjoshfreeman00.github.io%2FMatchTheDoggo%2Findex.html)
+- Validation for index.html can be found [here.](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjoshfreeman00.github.io%2FMatchTheDoggo%2Findex.html)
 
 ![index.html](docs/testing/index-html-val.png)
 
-- [game.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjoshfreeman00.github.io%2FMatchTheDoggo%2Fgame.html)
+- Validation for game.html can be found [here.](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjoshfreeman00.github.io%2FMatchTheDoggo%2Fgame.html)
+
+- Disclaimer: Both warnings shown are to do with section elements not containing any h elements (e.g h1), this was brought up with my mentor and was deemed fine to submit.
 
 ![game.html](docs/testing/game-html-val.png)
 
 ### CSS validation
 
-- validation for the CSS can be found [here.](https://jigsaw.w3.org/css-validator/validator)
+- Validation for the CSS can be found [here.](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjoshfreeman00.github.io%2FMatchTheDoggo&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+- Note: Any errors/warnings that are shown is to do with Bootstrap. If the CSS code is entered via direct input, there will be no errors, as show below.
 
 ![css-validation](docs/testing/css-validation.png)
 
 ### JS validation
 
-- validation for the JS can be found [here.](https://jshint.com/)
+- Validation for the JS can be found [here.](https://jshint.com/)
 
 ![js-validation](docs/testing/js-validation.png)
 
