@@ -94,9 +94,6 @@ The wireframes for the Game can be viewed here.
 
 To view all testing documentation, click [here.](TESTING.md)
 
-* Theres a bug that doesn't allow the shuffling funcion to shuffle the cards in the pool all together.
-- I fully acknowledge and understand that, in a real-world scenario, an extensive set of Jest tests would be more comprehensive.
-
 ## Deployment
 
 The site was deployed to GitHub pages. The steps to deploy are as follows: 
@@ -110,7 +107,7 @@ The live link can be found [here](https://joshfreeman00.github.io/MatchTheDoggo/
 
 In order to make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository:
 
-- `git clone https://github.com/joshfreeman00/GymFit.git`
+- `git clone https://github.com/joshfreeman00/MatchTheDoggo.git`
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
