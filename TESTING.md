@@ -70,6 +70,65 @@ To return to the readme click [here.](README.md)
 
 ![jest-test](docs/testing/jest-test.png)
 
+## User story testing
+
+* A fun and engaging experience while helping to improve my focus, attention and my memory skills.
+    - The game does this by timing the user and using a moves counter to track the score of the user. leaving the desire to beat their current score. Completing the game fast helps improve the users reactions and focus.
+
+![users-score](docs/testing/user-score.png)
+
+* Randomisation to increase longevity.
+* The game to be fun and unique every new game, no repetitiveness.
+    - This is achieved by shuffling the cards when the page loads and everytime the game is reset.
+
+![random1](docs/testing/randomization-1.png)
+
+![random2](docs/testing/randomization-2.png)
+
+* Instructions on how to play.
+* The game to include instructions on how to play.
+* The game to be simple and easy to play.
+    - Both on the home page and by clicking the 'How to play' button, the user can see and read the instructions on how to play.
+    - The games instructions being simple and not complicated, they are easy to follow.
+
+![instructions](docs/testing/instruction-section.png)
+![htp-btn](docs/testing/htp-modal.png)
+
+* Colours that are subtle and attractive that have a theme and are not too distracting from the game.
+    - Utilizing a colour theme that has a high contrast accessibility rating, text and images are easy to read/see.
+    - The use of having a solid color as a back-ground doesn't distract the user so they do not lose focus while playing the game.
+
+![game-color-theme](docs/testing/game-desktop.png)
+
+![colour-theme](docs/color-theme.jpeg)
+
+* A timer to show how fast I can complete said game.
+* To include a timer.
+    - A timer has been implemented to see how fast the user can finish the game, this brings enjoyment to user as it gives a challenge to beat their previous times.
+    - The timer starts once the 'play' button has been clicked, the timer stops once the last pair has been found.
+
+![game-stats](docs/testing/game-stats.png)
+![user-score](docs/testing/user-score.png)
+
+* A counter for the amount of moves I have completed and the amount of pairs I have.
+* To include a score and total moves.
+    - A moves counter has been implemented to track the amount of moves a user has used to complete the game, like the timer, it also bring enjoyment as they can try beat their score by winning with fewer moves.
+    - A pairs counter has also been included to keep the user informed with the amount of pairs they currently have.
+
+![game-stats](docs/testing/game-stats.png)
+![user-score](docs/testing/user-score.png)
+
+* A restart button to reset the game if required.
+    - A restart button has been added next to the play button for user ease, if the user would like to restart the game and shuffle the cards, it can be done so by clicking the 'restart' button.
+
+![restart-button](docs/testing/game-buttons.png)
+
+* The game does not start until the play button is clicked.
+    - The game has been developed so that the cards cannot be interacted with until the 'play' button has been clicked. This is required everytime the game has either loaded or restarted.
+    - As well as the card being inactive, the timer does not start until the 'play' button is also clicked.
+
+![play-button](docs/testing/game-buttons.png)
+
 ## Bugs
 
 * ~~Theres was a bug that wouldn't allow the shuffling funcion to shuffle the cards in the pool all together.~~ This was fixed by removing the unnecessary bootstrap rows so that all cards were within the same parent element (row).
