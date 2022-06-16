@@ -16,11 +16,15 @@ To return to the readme click [here.](README.md)
 
 ### CSS validation
 
+- validation for the CSS can be found [here.](https://jigsaw.w3.org/css-validator/validator)
 
+![css-validation](docs/testing/css-validation.png)
 
 ### JS validation
 
+- validation for the JS can be found [here.](*)
 
+![js-validation](docs/testing/js-validation.png)
 
 ## Responsiveness
 
@@ -56,11 +60,16 @@ To return to the readme click [here.](README.md)
 
     ![safari](docs/testing/safari-test.png)
 
+## JEST testing
+
+- I fully acknowledge and understand that, in a real-world scenario, an extensive set of Jest tests would be more comprehensive.
+
+![jest-test](*)
 
 ## Bugs
 
-* Theres was a bug that wouldn't allow the shuffling funcion to shuffle the cards in the pool all together. This was fixed by removing the unnecessary bootstrap rows so that all cards were within the same parent element (row).
+* ~~Theres was a bug that wouldn't allow the shuffling funcion to shuffle the cards in the pool all together.~~ This was fixed by removing the unnecessary bootstrap rows so that all cards were within the same parent element (row).
 
 ### Unfixed bugs
 
-* There are no unfixed bugs that I am currently aware of
+* There are no unfixed bugs that I am currently aware of.
