@@ -1,3 +1,6 @@
+/* jshint esversion: 11, jquery: true */
+
+
 /**
  * @jest-environment jsdom
  */
@@ -47,5 +50,3 @@ describe("function restarts game by reloading the page", () => {
         expect(window.location.reload).toHaveBeenCalled();
     });
 });
-
-//I fully acknowledge and understand that, in a real-world scenario, an extensive set of Jest tests would be more comprehensive.
