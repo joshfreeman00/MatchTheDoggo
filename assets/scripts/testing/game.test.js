@@ -6,7 +6,9 @@
  */
 
 const {
-    restartGame
+    restartGame,
+    pairs,
+    totalMoves
 } = require("../game");
 
 beforeAll(() => {
@@ -48,5 +50,21 @@ describe("function restarts game by reloading the page", () => {
     it('calls reload function', () => {
         restartGame(); // as defined above..
         expect(window.location.reload).toHaveBeenCalled();
+    });
+});
+
+
+//test to see if the score values are set to 0 on page load
+describe("Score values are set to 0 on page load", () => {
+    beforeAll(() => {
+        let pairs = 3;
+        let totalMoves = 7;
+        restartGame();
+    });
+    test("Pairs value is set to 0", () => {
+        expect(pairs).toEqual(0);
+    });
+    test("Moves value is set to 0", () => {
+        expect(totalMoves).toEqual(0);
     });
 });

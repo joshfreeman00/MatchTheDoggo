@@ -201,5 +201,7 @@ function restartGame() {
 }
 
 if (typeof module !== 'undefined') module.exports = {
-    restartGame
+    restartGame,
+    pairs,
+    totalMoves
 };
