@@ -22,7 +22,7 @@ To return to the readme click [here.](README.md)
 
 ### JS validation
 
-- validation for the JS can be found [here.](*)
+- validation for the JS can be found [here.](https://jshint.com/)
 
 ![js-validation](docs/testing/js-validation.png)
 
@@ -64,7 +64,7 @@ To return to the readme click [here.](README.md)
 
 - I fully acknowledge and understand that, in a real-world scenario, an extensive set of Jest tests would be more comprehensive.
 
-![jest-test](*)
+![jest-test](docs/testing/jest-test.png)
 
 ## Bugs
 
