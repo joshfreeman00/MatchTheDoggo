@@ -155,10 +155,10 @@
         <button class="btn btn-light box-shadow game-btn" onclick="restartGame()">Restart</button>
         <button class="btn btn-light box-shadow game-btn" id="htp">How to play</button>
     </section>
-    <!-- modal -->
+    <!-- how to play modal -->
     <aside id="htp-modal" class="modal">
         <!-- modal content -->
-        <div class="modalContent">
+        <div id="modalContent">
             <h4>How to play:</h4>
             <p>1. click on a card to flip it over.</p>
             <p>2. click on another card.</p>
@@ -166,6 +166,17 @@
             <p>4. If they are not identical, they will flip back over and you'll have to try again!</p>
             <p>5. Find all the pairs to win!</p>
             <p id="close-btn">
+                <button class="btn btn-primary close">Close</button>
+            </p>
+        </div>
+    </aside>
+    <!-- win modal -->
+    <aside id="win-modal" class="modal">
+        <!-- modal content -->
+        <div id="winModalContent">
+            <h4>You win, Congratulations!</h4>
+            <p>You found all the pairs!</p>
+            <p id="win-close-btn">
                 <button class="btn btn-primary close">Close</button>
             </p>
         </div>

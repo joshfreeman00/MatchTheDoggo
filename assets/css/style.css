@@ -59,7 +59,7 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modalContent {
+#modalContent {
     background-color: #fff;
     color: #000;
     margin: auto;
@@ -71,6 +71,16 @@ body {
 
 #close-btn {
     text-align: right;
+}
+
+#winModalContent {
+    background-color: #fff;
+    color: #000;
+    margin: auto;
+    padding: 25px;
+    border-radius: 5px;
+    width: 60%;
+    text-align: center;
 }
 
 /* card structure */

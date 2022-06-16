@@ -24,6 +24,23 @@ function shuffleCards() {
     });
 }
 
+//Winning modal variables
+let win = document.getElementById('win-modal');
+let closeWin = document.getElementById('win-close-btn');
+
+/**
+ * Win modal pop up
+ */
+function winModal() {
+    win.style.display = 'block';
+}
+
+//Button to close winning modal pop up
+closeWin?.addEventListener('click', () => {
+    win.style.display = 'none';
+});
+
+
 /**
  * Increment pairs value once a pair has been found
  */
@@ -33,7 +50,7 @@ function incrementPairs() {
     if (pairs === totalCards / 2) {
         clearInterval(timerInterval);
         setTimeout(() => {
-            alert('You win!');
+            winModal();
         }, 500);
     }
 }
@@ -177,20 +194,20 @@ function startTimer() {
 
 //Modal scripting
 
-//Set variables for the modal
-let modal = document.getElementById('htp-modal');
+//Set variables for the how to play modal
+let htpModal = document.getElementById('htp-modal');
 let htpBtn = document.getElementById('htp');
 let closeBtn = document.getElementById('close-btn');
 
 //Calls the modal to open when the 'How to play' is clicked
 htpBtn?.addEventListener('click', function() {
-    modal.style.display = 'block';
+    htpModal.style.display = 'block';
 });
 
 
 //When the user clicks the close button, the modal closes
 closeBtn?.addEventListener('click', function() {
-    modal.style.display = 'none';
+    htpModal.style.display = 'none';
 });
 
 /**
