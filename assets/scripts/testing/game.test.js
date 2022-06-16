@@ -1,4 +1,4 @@
-/* jshint esversion: 11, jquery: true */
+/* jshint esversion: 11*/
 
 
 /**

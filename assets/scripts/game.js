@@ -1,4 +1,4 @@
-/* jshint esversion: 11, jquery: true */
+/* jshint esversion: 11*/
 
 //Game variables
 const cards = document.querySelectorAll('.card-total');
@@ -142,7 +142,7 @@ function timeToString(time) {
 
 //Create an event listener so when the the play button is pressed, the function 'start' is called
 let playBtn = document.getElementById('play-btn');
-playBtn.addEventListener('click', start);
+playBtn?.addEventListener('click', start);
 
 
 //Set variables
@@ -183,13 +183,13 @@ let htpBtn = document.getElementById('htp');
 let closeBtn = document.getElementById('close-btn');
 
 //Calls the modal to open when the 'How to play' is clicked
-htpBtn.addEventListener('click', function() {
+htpBtn?.addEventListener('click', function() {
     modal.style.display = 'block';
 });
 
 
 //When the user clicks the close button, the modal closes
-closeBtn.addEventListener('click', function() {
+closeBtn?.addEventListener('click', function() {
     modal.style.display = 'none';
 });
 
