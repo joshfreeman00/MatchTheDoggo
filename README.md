@@ -12,6 +12,8 @@ A deployed link is available [here.](https://joshfreeman00.github.io/MatchTheDog
 
 ## Goals
 
+The goal for this project is to create a pair matching game that is both interactive for the user as well as user-friendly.
+
 ### User:
 
 As a user I want the game to include;
@@ -40,19 +42,91 @@ As a games developer I want;
 * Be able to match the dogs.
 * A timer to show the time taken to complete the game.
 * Keep track of their game score and total moves.
-* Instructions alert on how to play.
+* Instructions modal on how to play.
 
-### Structure
+## Structure
 
-* Instructions alert that shows how to play the game.
-* The game page that includes:
+* Entering the website takes you to the homepage, where the user can see the title, a welcome sentence and instructions on how to play.
+* Underneath the instructions is a button that takes you to the game page itself.
+* The game page includes:
   - 12 cards, with 6 pairs.
   - A timer in the top left of the page.
   - A reset button underneath the cards that resets the scores and randomises the cards, also resets timer.
-  - A help button underneath the cards that once clicked, an alert pops up with instructions.
+  - A help button underneath the cards that once clicked, an modal pops up with instructions.
   - A score of the amount of moves the user has done and the amount of pairs, just above the cards.
-  - Social media links at the bottom of the page.
-* Game cards to be flipped like in real life.
+* Game cards that flip when clicked on, just like in real life.
+
+### Home page
+
+#### Title
+
+* The name of the website is located at the top of the page, along with a welcoming sentence.
+  - Both on the home page and game page, the title has the abiltiy of returning to the home page just by clicking on it.
+
+![title](docs/testing/title-welcome.png)
+
+#### Instructions
+
+* The main focus of the page is to give instructions to the user of how to play the game.
+
+![instructions](docs/testing/instruction-section.png)
+
+#### Ready to play? button
+
+* Underneath the instructions is a button that takes you to the game page.
+
+![ready-to-play](docs/testing/ready-to-play.png)
+
+### Game page 
+
+#### Title
+
+* Again the name of the website is located at the top of the page
+  - Both on the home page and game page, the title has the abiltiy of returning to the home page just by clicking on it.
+
+![title](docs/testing/game-title.png)
+
+* There are two buttons, home and how to play.
+  - The home button allows the user to go to the home page.
+  - The how to play button, once clicked, allows the user to read the instructions of the game.
+
+![buttons-top](docs/testing/nav-buttons.png)
+
+### Game area
+
+* At the top of the game area are the stats that consist of the time, moves taken and pairs found.
+
+![stats](docs/testing/game-stats.png)
+
+* The main focus of this page is the cards, this is the game itself, consisting of 12 cards.
+
+![cards](docs/testing/game-area.png)
+
+* Underneath the cards is the two buttons for the game, play and reset.
+  - The play button starts the game, it allows the user to interact with the cards and also starts the timer.
+  - The reset button resets the games progress by reloading the page.
+
+![play-buttons](docs/testing/game-buttons.png)
+
+## Design
+
+### Images
+
+The images used are relevant to the games context.
+
+* The 6 photos of dogs are used for the front of the cards, which is the main focus of the game.
+* The image of the paw prints is used for the back of the cards and is relevant to the game.
+
+### Colour scheme
+
+* The colour scheme of the game is green and white, these two colours provide excellent contrast and porvides a feel of nature and harmony throughout.
+
+![colour-theme](docs/color-theme.jpeg)
+
+### Font
+
+* The font used throughout the website is Fredoka. A fullback font of Sans-Serif is used just in case for whatever reason is that the font isn't loaded correctly.
+  - The link to link to the font Fredoka can be found [here.](https://fonts.google.com/specimen/Fredoka?query=fredoka)
 
 ## Wireframes
 
@@ -66,7 +140,7 @@ The wireframes for the Game can be viewed here.
 
 ![game](docs/wireframes/game-page.png)
 
-* alert
+* Modal
 
 ![alert_htp](docs/wireframes/alert.png)
 
@@ -82,7 +156,7 @@ The wireframes for the Game can be viewed here.
 * [Github](https://github.com/) - Used to secure code online.
 * [Git](https://git-scm.com/) - Version control.
 * [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
-* [Google Fonts](https://fonts.google.com/) - For the two fonts that were used.
+* [Google Fonts](https://fonts.google.com/) - For the font that was used.
 * [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - For the grid system and buttons.
 * Google Chrome Dev tools - for proofreading code.
 * [Am I Responsive?](https://ui.dev/amiresponsive) - To see the responsiveness of the website on multiple devices.
