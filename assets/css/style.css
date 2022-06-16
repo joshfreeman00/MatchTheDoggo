@@ -172,7 +172,7 @@ body {
         height: 7em;
     }
 
-    .modalContent {
+    #modalContent {
         width: 100%;
     }
 }
