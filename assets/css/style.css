@@ -116,7 +116,7 @@ body {
     pointer-events: none;
 }
 
-*/ .card-structure:active {
+.card-structure:active {
     transform: scale(0.97);
     transition: transform .2s;
 }
