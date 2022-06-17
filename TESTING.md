@@ -120,8 +120,10 @@ To return to the readme click [here.](README.md)
 
 * A restart button to reset the game if required.
     - A restart button has been added next to the play button for user ease, if the user would like to restart the game and shuffle the cards, it can be done so by clicking the 'restart' button.
+    - Once the restart has been clicked, a modal will pop up making sure the user would like to restart the game. The user can then proceed with restarting the game by clicking 'Yes' or the user can close the modal and continue by clicking the 'Close' button.
 
 ![restart-button](docs/testing/game-buttons.png)
+![restart-modal](docs/testing/restart-modal.png)
 
 * The game does not start until the play button is clicked.
     - The game has been developed so that the cards cannot be interacted with until the 'play' button has been clicked. This is required every time the game has either loaded or restarted.
