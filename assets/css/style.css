@@ -1,5 +1,7 @@
+/* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
 
+/* Global styling */
 body {
     font-family: "Fredoka", sans-serif;
     background-color: #198754;
@@ -7,6 +9,7 @@ body {
     text-align: center;
 }
 
+/* Structural styling */
 .title {
     margin-top: 10px;
 }
@@ -54,7 +57,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* modal pop up */
+/* modals */
 .modal {
     display: none;
     position: fixed;
