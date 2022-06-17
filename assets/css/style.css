@@ -1,6 +1,11 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
 
+#error-page {
+    background-color: #fff;
+    color: #000;
+}
+
 /* Global styling */
 body {
     font-family: "Fredoka", sans-serif;
