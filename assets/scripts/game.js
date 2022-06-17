@@ -205,6 +205,21 @@ closeBtn?.addEventListener('click', function() {
     htpModal.style.display = 'none';
 });
 
+//Restart modal
+let restartBtn = document.getElementById('restart-btn');
+let restartModal = document.getElementById('restart-modal');
+let restartClose = document.getElementById('restart-close');
+
+//Calls the modal to open when the restart button is clicked
+restartBtn?.addEventListener('click', function() {
+    restartModal.style.display = 'block';
+});
+
+//When the user clicks the close button, the restart modal closes
+restartClose?.addEventListener('click', function() {
+    restartModal.style.display = 'none';
+});
+
 /**
  * Restarts the game by refreshing the window
  */

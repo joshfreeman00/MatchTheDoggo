@@ -92,6 +92,28 @@ body {
     text-align: center;
 }
 
+#restartModalContent {
+    background-color: #fff;
+    color: #000;
+    margin: auto;
+    padding: 25px;
+    border-radius: 5px;
+    width: 60%;
+}
+
+#restartModalContent p {
+    margin-top: 35px;
+    text-align: unset;
+}
+
+#restart-yes {
+    margin-right: 30px;
+}
+
+#restart-close {
+    margin-left: 30px;
+}
+
 /* card structure */
 .card-style {
     position: relative;
@@ -182,5 +204,13 @@ body {
 
     .game-btn {
         margin: unset;
+    }
+
+    #restart-yes {
+        margin-right: unset;
+    }
+    
+    #restart-close {
+        margin-left: unset;
     }
 }

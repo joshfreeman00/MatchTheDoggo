@@ -156,7 +156,7 @@
     </main>
     <section class="buttons-bottom">
         <button class="btn btn-danger box-shadow game-btn" id="play-btn">Play</button>
-        <button class="btn btn-light box-shadow game-btn" onclick="restartGame()">Restart</button>
+        <button class="btn btn-light box-shadow game-btn" id="restart-btn">Restart</button>
     </section>
     <!-- how to play modal -->
     <aside id="htp-modal" class="modal">
@@ -181,6 +181,17 @@
             <p>You found all the pairs!</p>
             <p id="win-close-btn">
                 <button class="btn btn-primary close">Close</button>
+            </p>
+        </div>
+    </aside>
+    <!-- restart modal -->
+    <aside id="restart-modal" class="modal">
+        <!-- modal content -->
+        <div id="restartModalContent">
+            <h4>Are you sure you want to restart?</h4>
+            <p>
+                <button class="btn btn-danger" id="restart-yes" onclick="restartGame()">Yes</button>
+                <button class="btn btn-primary close" id="restart-close">Close</button>
             </p>
         </div>
     </aside>
