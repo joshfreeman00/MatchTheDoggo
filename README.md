@@ -111,9 +111,16 @@ As a games developer I want;
 
 * Underneath the cards is the two buttons for the game, play and reset.
   - The play button starts the game, it allows the user to interact with the cards and also starts the timer.
-  - The reset button resets the games progress by reloading the page.
+  - The reset button resets the games progress by reloading the page. Before reloading the page, a modal opens up to double check if the user still wants to continue to restart the game
 
 ![play-buttons](docs/testing/game-buttons.png)
+![restart-modal](docs/testing/restart-modal.png)
+
+### 404 error page
+
+* An error page has been included. In for any reason there is a internal error, the user will be redirected to this page, which contains a link that allows the user to go back to the home page.
+
+![error-page](docs/testing/error-page.png)
 
 ## Design
 
