@@ -25,6 +25,7 @@ As a user I want the game to include;
 * A timer to show how fast I can complete said game.
 * A counter for the amount of moves I have completed and the amount of pairs I have.
 * A restart button to reset the game if required.
+* Accessibility for mobile and tablet devices.
 
 ### Game Developer:
 
@@ -36,6 +37,7 @@ As a games developer I want;
 * To include a timer.
 * To include a score and total moves.
 * The game does not start until the play button is clicked.
+* The game to be functional on both mobile and tablet devices.
 
 ## Features
 

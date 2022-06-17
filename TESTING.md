@@ -129,6 +129,13 @@ To return to the readme click [here.](README.md)
 
 ![play-button](docs/testing/game-buttons.png)
 
+* Accessibility for mobile and tablet devices.
+* The game to be functional on both mobile and tablet devices.
+    - This is achieved by using media queries, altering the style of select elements to suit the resolution of both mobile and tablet devices.
+
+![mobile-view](docs/testing/game-mobile.png)
+![tablet-view](docs/testing/game-tablet.png)
+
 ## Bugs
 
 * ~~Theres was a bug that wouldn't allow the shuffling function to shuffle the cards in the pool all together.~~ This was fixed by removing the unnecessary bootstrap rows so that all cards were within the same parent element (row).
