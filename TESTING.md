@@ -138,6 +138,20 @@ To return to the readme click [here.](README.md)
 ![mobile-view](docs/testing/game-mobile.png)
 ![tablet-view](docs/testing/game-tablet.png)
 
+## Environment testing
+
+### Local environment
+
+* The image below shows the game within the local environment of gitpod.
+
+![gitpod](docs/testing/gitpod-environment.png)
+
+### Production environment
+
+* The image below shows the game within the production environment of github pages.
+
+![github](docs/testing/github-pages-environment.png)
+
 ## Bugs
 
 * ~~Theres was a bug that wouldn't allow the shuffling function to shuffle the cards in the pool all together.~~ This was fixed by removing the unnecessary bootstrap rows so that all cards were within the same parent element (row).
