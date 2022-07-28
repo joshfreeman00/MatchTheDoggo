@@ -140,17 +140,27 @@ To return to the readme click [here.](README.md)
 
 ## Environment testing
 
+* The following images are within two seperate environments, they have different URLs to validate this.
+
 ### Local environment
 
-* The image below shows the game within the local environment of gitpod.
+* The images below show the game within the local (development) environment of gitpod.
 
-![gitpod](docs/testing/gitpod-environment.png)
+- index.html
+![gitpod-index](docs/testing/gitpod-index.png)
+
+- game.html
+![gitpod-game](docs/testing/gitpod-game.png)
 
 ### Production environment
 
-* The image below shows the game within the production environment of github pages.
+* The images below show the game within the production (deployed) environment of github pages.
 
-![github](docs/testing/github-pages-environment.png)
+- index.html
+![github-index](docs/testing/github-pages-index.png)
+
+- game.html
+![github](docs/testing/github-pages-game.png)
 
 ## Bugs
 
